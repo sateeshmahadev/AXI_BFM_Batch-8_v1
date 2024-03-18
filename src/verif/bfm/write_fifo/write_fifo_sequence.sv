@@ -1,3 +1,4 @@
+//  AUTHOR: Sateesh Mahadev
 `ifndef WRITE_FIFO_SEQUENCE_INCLUDED_
 `define WRITE_FIFO_SEQUENCE_INCLUDED_
 
