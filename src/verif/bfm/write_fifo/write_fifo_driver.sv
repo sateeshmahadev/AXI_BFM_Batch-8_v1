@@ -1,6 +1,3 @@
-//------------------------------------------------------------------------------------------------------------
-//  AGENT_NAME: write_fifo_agent.sv
-//  FILE_NAME: write_fifo_driver.sv
 //  AUTHOR: Sateesh Mahadev
 //
 //  DESCRIPTION:
