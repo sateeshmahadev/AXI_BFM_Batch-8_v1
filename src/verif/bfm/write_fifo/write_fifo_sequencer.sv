@@ -1,3 +1,4 @@
+//  AUTHOR: Sateesh Mahadev
 `ifndef WRITE_FIFO_SEQUENCER_INCLUDED_
 `define WRITE_FIFO_SEQUENCER_INCLUDED_
 class write_fifo_sequencer extends uvm_sequencer#(write_fifo_seq_item);
