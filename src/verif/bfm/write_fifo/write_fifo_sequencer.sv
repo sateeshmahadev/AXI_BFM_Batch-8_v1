@@ -3,6 +3,7 @@
 class write_fifo_sequencer extends uvm_sequencer#(write_fifo_seq_item);
   `uvm_component_utils(write_fifo_sequencer)
 
+  //consrtuctor new():
   function new(string name="write_fifo_sequencer",uvm_component parent =null);
     super.new(name,parent);
   endfunction

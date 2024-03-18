@@ -16,26 +16,33 @@ package write_fifo_pkg;
 
   `include "base_sequence.sv"
   `include "write_fifo_sequence.sv"
-  `include "fifo_bfm_8b_wr_incr_sequence.sv"
-  `include "fifo_bfm_8b_wr_fixed_sequence.sv"
-  `include "fifo_bfm_32b_wr_incr_alligned_sequence_awlen_0.sv"
-  `include "fifo_bfm_64b_wr_incr_alligned_sequence_awlen_1.sv"
-  `include "fifo_bfm_96b_wr_incr_alligned_sequence_awlen_2.sv"
-  `include "fifo_bfm_128b_wr_incr_alligned_sequence_awlen_3.sv"
-  `include "fifo_bfm_8b_wr_incr_unalligned_sequence_awlen_0.sv"
-  `include "fifo_bfm_16b_wr_incr_unalligned_sequence_awlen_0.sv"
-  `include "fifo_bfm_16b_wr_incr_unalligned_sequence_awlen_1.sv"
-  `include "fifo_bfm_24b_wr_incr_unalligned_sequence_awlen_0.sv"
-  `include "fifo_bfm_40b_wr_incr_unalligned_sequence_awlen_1.sv"
-  `include "fifo_bfm_56b_wr_incr_unalligned_sequence_awlen_1.sv"
-  `include "fifo_bfm_80b_wr_incr_unalligned_sequence_awlen_2.sv"
   `include "fifo_bfm_wr_incr_alligned_sequence.sv"
-  `include "fifo_bfm_wr_incr_alligned_sequence.sv"
+  `include "fifo_bfm_wr_incr_unalligned_sequence.sv"
 
 
   `include "fifo_bfm_32b_rd_incr_alligned_sequence_arlen_0.sv"
+
+  `include "fifo_bfm_32b_rd_seq.sv"
+  `include "fifo_bfm_64b_rd_seq.sv"
+  `include "fifo_bfm_96b_rd_seq.sv"
+  `include "fifo_bfm_128b_rd_seq.sv"
+  `include "fifo_bfm_160b_rd_seq.sv"
+  `include "fifo_bfm_192b_rd_seq.sv"
+  `include "fifo_bfm_224b_rd_seq.sv"
+  `include "fifo_bfm_256b_rd_seq.sv"
+  `include "fifo_bfm_288b_rd_seq.sv"
+  `include "fifo_bfm_320b_rd_seq.sv"
+  `include "fifo_bfm_352b_rd_seq.sv"
+  `include "fifo_bfm_384b_rd_seq.sv"
+  `include "fifo_bfm_416b_rd_seq.sv"
+  `include "fifo_bfm_448b_rd_seq.sv"
+  `include "fifo_bfm_480b_rd_seq.sv"
+  `include "fifo_bfm_512b_rd_seq.sv"
+  
+
 
 
 endpackage
 
 `endif
+

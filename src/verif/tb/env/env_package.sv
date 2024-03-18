@@ -8,6 +8,7 @@ import axi4_globals_pkg::*;
 import write_fifo_pkg::*;
 import axi4_slave_pkg::*;
 `include "axi_fifo_scoreboard.sv"
+`include "axi_subscriber.sv"
 `include "env.sv"
 
 endpackage

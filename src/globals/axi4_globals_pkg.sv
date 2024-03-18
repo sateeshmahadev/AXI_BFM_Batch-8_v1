@@ -56,7 +56,8 @@ package axi4_globals_pkg;
 
   //Variable: LENGTH
   //Indicates the length of the address write and read channels
-  parameter int LENGTH = 3;
+  //parameter int LENGTH = 3;
+  parameter int LENGTH = 4;
 
   //Variable: OUTSTANDING_FIFO_DEPTH
   //Indicates the fifo depth of outstanding transaction

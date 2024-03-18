@@ -1,4 +1,4 @@
-
+//Interface for fifo side
 interface fifo_if(input logic clk,rstn);
   logic wr_en;
   logic rd_en;
@@ -6,6 +6,8 @@ interface fifo_if(input logic clk,rstn);
   logic empty;
   logic [127:0]wr_data;
   logic [127:0]rd_data;
+
+//modport for driver
 
   modport DRIVER(output wr_en,
                  output rd_en,

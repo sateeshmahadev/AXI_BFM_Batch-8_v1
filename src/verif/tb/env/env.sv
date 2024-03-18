@@ -13,6 +13,8 @@ class env extends uvm_env;
   //read_fifo_agent read_fifo_agent_h;
   axi4_slave_agent axi_slave_agent_h;
   axi_fifo_scoreboard axi_fifo_scoreboard_h;
+  // Declaring subscriber for coverage
+  axi_cov_subscriber  axi_cov_subscriber_h;
 
   function new(string name = "axi_env", uvm_component parent = null);
     super.new(name, parent);
@@ -26,6 +28,7 @@ class env extends uvm_env;
      axi_slave_agent_h = axi4_slave_agent::type_id::create("axi_slave_agent_h",this);
      axi_fifo_scoreboard_h = axi_fifo_scoreboard::type_id::create("axi_fifo_scoreboard_h",this);
 
+     axi_cov_subscriber_h = axi_cov_subscriber::type_id::create("axi_cov_subscriber_h",this);
    endfunction
 
    virtual function void connect_phase(uvm_phase phase);
@@ -39,6 +42,7 @@ class env extends uvm_env;
      axi_slave_agent_h.axi4_slave_mon_proxy_h.axi4_slave_read_address_analysis_port.connect(axi_fifo_scoreboard_h.avip_slave_read_add_exp);
      axi_slave_agent_h.axi4_slave_mon_proxy_h.axi4_slave_read_data_analysis_port.connect(axi_fifo_scoreboard_h.avip_slave_read_data_exp);
 
+     write_fifo_agent_h.write_fifo_monitor_h.item_collected_port.connect(axi_cov_subscriber_h.analysis_export);
    endfunction
 
 endclass 

@@ -5,6 +5,15 @@ class base_sequence extends uvm_sequence#(write_fifo_seq_item);
 
   `uvm_object_utils(base_sequence)
 
+
+//-----------------------------------------------------------------------------
+// Constructor: new
+// Initializes base_sequence class object
+//
+// Parameters:
+//  name - base_sequence
+//-----------------------------------------------------------------------------
+
   function new(string name="base_sequence", uvm_component parent = null);
     super.new(name);
   endfunction

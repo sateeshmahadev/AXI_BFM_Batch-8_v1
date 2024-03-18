@@ -1,0 +1,7 @@
+var g_db_data = [
+{dummy:0},
+{name:'axi4_slave_covergroup',f:1,type:6,id:8707,tb:'744',h:'83',m:'661',hp:'11.15%',cov:['38.58%','R'],g:'100.00%',gp:['38.58%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4_slave_pkg/axi4_slave_coverage',parent:'8702'},
+{name:'axi_bfm_covergroup',f:1,type:6,id:9058,tb:'59',h:'15',m:'44',hp:'25.42%',cov:['55.75%','Y'],g:'100.00%',gp:['55.75%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/env_package/axi_cov_subscriber',parent:'9053'},
+{name:'axi4_slave_covergroup',f:1,type:6,id:12414,tb:'744',h:'83',m:'661',hp:'11.15%',cov:['38.58%','R'],g:'100.00%',gp:['38.58%','R'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4_slave_pkg::axi4_slave_coverage',parent:'12409'},
+{name:'axi_bfm_covergroup',f:1,type:6,id:12765,tb:'59',h:'15',m:'44',hp:'25.42%',cov:['55.75%','Y'],g:'100.00%',gp:['55.75%','Y'],opts:[[],['merge_instance','true']],hdlPath:'work.env_package::axi_cov_subscriber',parent:'12760'}];
+processConsCovergroupsData(g_db_data);

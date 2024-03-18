@@ -117,7 +117,7 @@ function void write_fifo_monitor::build_phase(uvm_phase phase);
       write_fifo_seq_item_h.print();
       $display("Tharun Monitor received the data %t",$time);
       end
-    if(fintf.wr_data[127:120]==8'b10101010) 
+    else if(fintf.wr_data[127:120]==8'b10101010 ) //added else for cheching write phase addr 
       begin
        $cast(write_fifo_seq_item_h.awid,fintf.wr_data[119 -:4]);
         write_fifo_seq_item_h.awaddr=fintf.wr_data[115 -:32];
