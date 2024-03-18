@@ -1,3 +1,4 @@
+//  AUTHOR: Sateesh Mahadev
 `ifndef WRITE_FIFO_PKG_INCLUDED_
 `define WRITE_FIFO_PKG_INCLUDED_
 
